@@ -1,0 +1,1 @@
+//aqui nós vamos receber a referencia do arquivo e o hash enviados pelo usuário, gerar um novo hash do arquivo e comparar o novo hash com o hash enviado pelo usuário.
