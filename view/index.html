@@ -1,25 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hash Validator</title>
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hash Validator</title>
+    </head>
+    <body>
 
-    <div>
-        <h1>Veja se o seu arquivo não foi comprometido</h1>
-        <p>Basta inserir o arquivo junto do hash recebido e você vai obter o resultado</p>
-    </div>
+        <div>
+            <h1>Veja se o seu arquivo não foi comprometido</h1>
+            <p>Basta inserir o arquivo junto do hash recebido e você vai obter o resultado</p>
+        </div>
 
-    <div>
-        <input type="file" id="arquivoEnviado">
-        <button>
-            Enviar
-        </button>
-    </div>
+        <form id="validadorForm">
 
+            <div class="campo">
+            <label for="arquivoInput">1. Faça o upload do arquivo recebido (Áudio/ZIP):</label>
+            <input type="file" id="arquivoInput" required />
+            </div>
+        
+            <div class="campo">
+            <label for="hashInput">2. Cole o Hash fornecido:</label>
+            <input type="text" id="hashInput" placeholder="Ex: a1b2c3d4..." required />
+            </div>
+        
+            <button type="submit">Verificar Integridade e Salvar</button>
 
-    
-</body>
-</html>
+        </form>
+
+        <script src="javascript.js"></script>
+        
+    </body>
+    </html>
